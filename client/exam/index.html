@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우지- 스마트한 휴대폰 가격비교</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <h1 class="logo">우지</h1>
+                </div>
+                <nav class="header__nav">
+                    <ul class="nav-list">
+                        <li><a href="#comparison">가격비교</a></li>
+                        <li><a href="#popular">인기모델</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="header__search">
+                    <input type="text" class="search-input" placeholder="휴대폰 모델 검색...">
+                    <button class="search-btn">검색</button>
+                </div>
+                <button class="hamburger" aria-label="메뉴">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">스마트한 휴대폰 구매, 이제 더 쉽게</h1>
+                    <p class="hero__subtitle">20-30대를 위한 맞춤형 가격 비교</p>
+                    <button class="btn btn--primary btn--lg hero__cta">가격 비교 시작하기</button>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__chart">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/91f9b8faa0e9f029b99fea9255035ca2/a88518f1-a1a3-40e5-ac81-4490b7cc5000/b1ce7425.png" alt="2024년 한국 스마트폰 시장 점유율" class="market-chart">
+                        <p class="chart-caption">2024년 국내 스마트폰 시장 현황</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">왜 우지(UZI)인가요?</h2>
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">📊</div>
+                        <h3 class="feature-card__title">실시간 가격 비교</h3>
+                        <p class="feature-card__description">최신 가격 정보를 실시간으로 업데이트하여 항상 정확한 정보를 제공합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🎯</div>
+                        <h3 class="feature-card__title">맞춤형 추천</h3>
+                        <p class="feature-card__description">사용 패턴과 예산을 분석하여 20-30대에게 최적화된 휴대폰을 추천합니다.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">💎</div>
+                        <h3 class="feature-card__title">투명한 정보</h3>
+                        <p class="feature-card__description">숨겨진 비용 없이 모든 요금제와 부가서비스를 투명하게 공개합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Insights Section -->
+        <section class="market-insights">
+            <div class="container">
+                <h2 class="section-title">시장 트렌드 분석</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/91f9b8faa0e9f029b99fea9255035ca2/8a319ea8-9dd0-45d5-a06a-35eea615504c/d0d621f9.png" alt="연령대별 브랜드 선호도" class="insight-chart">
+                        <h3>연령대별 브랜드 선호도</h3>
+                        <p>20-30대는 아이폰을 더 선호하는 경향을 보입니다.</p>
+                    </div>
+                    <div class="insight-card">
+                        <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/91f9b8faa0e9f029b99fea9255035ca2/8614001c-2868-415f-a313-0de69bb81b11/cdf60251.png" alt="온라인 구매 증가 추이" class="insight-chart">
+                        <h3>온라인 구매 급증</h3>
+                        <p>온라인 휴대폰 구매 비중이 지속적으로 증가하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phone Comparison Tool -->
+        <section id="comparison" class="comparison-tool">
+            <div class="container">
+                <h2 class="section-title">휴대폰 비교하기</h2>
+                <div class="comparison-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">브랜드</label>
+                            <select class="form-control" id="brand-select">
+                                <option value="">브랜드 선택</option>
+                                <option value="samsung">삼성</option>
+                                <option value="apple">애플</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">가격대</label>
+                            <select class="form-control" id="price-select">
+                                <option value="">가격대 선택</option>
+                                <option value="low">50만원 이하</option>
+                                <option value="mid">50-100만원</option>
+                                <option value="high">100만원 이상</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">주요 기능</label>
+                            <select class="form-control" id="feature-select">
+                                <option value="">기능 선택</option>
+                                <option value="camera">카메라</option>
+                                <option value="battery">배터리</option>
+                                <option value="gaming">게임성능</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary comparison-btn">비교 결과 보기</button>
+                </div>
+                <div class="comparison-results hidden" id="comparison-results">
+                    <h3>비교 결과</h3>
+                    <div class="results-grid" id="results-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Phones Section -->
+        <section id="popular" class="popular-phones">
+            <div class="container">
+                <h2 class="section-title">인기 휴대폰</h2>
+                <div class="phones-grid">
+                    <div class="phone-card">
+                        <div class="phone-card__image">📱</div>
+                        <div class="phone-card__content">
+                            <div class="phone-card__brand">삼성</div>
+                            <h3 class="phone-card__model">갤럭시 S25</h3>
+                            <div class="phone-card__price">115만원부터</div>
+                            <ul class="phone-card__specs">
+                                <li>50MP 카메라</li>
+                                <li>4000mAh 배터리</li>
+                                <li>256GB 저장공간</li>
+                            </ul>
+                            <button class="btn btn--outline btn--sm">가격 비교</button>
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-card__image">📱</div>
+                        <div class="phone-card__content">
+                            <div class="phone-card__brand">애플</div>
+                            <h3 class="phone-card__model">아이폰 15</h3>
+                            <div class="phone-card__price">125만원부터</div>
+                            <ul class="phone-card__specs">
+                                <li>48MP 카메라</li>
+                                <li>3349mAh 배터리</li>
+                                <li>256GB 저장공간</li>
+                            </ul>
+                            <button class="btn btn--outline btn--sm">가격 비교</button>
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-card__image">📱</div>
+                        <div class="phone-card__content">
+                            <div class="phone-card__brand">삼성</div>
+                            <h3 class="phone-card__model">갤럭시 S25+</h3>
+                            <div class="phone-card__price">135만원부터</div>
+                            <ul class="phone-card__specs">
+                                <li>50MP 카메라</li>
+                                <li>4900mAh 배터리</li>
+                                <li>256GB 저장공간</li>
+                            </ul>
+                            <button class="btn btn--outline btn--sm">가격 비교</button>
+                        </div>
+                    </div>
+                    <div class="phone-card">
+                        <div class="phone-card__image">📱</div>
+                        <div class="phone-card__content">
+                            <div class="phone-card__brand">애플</div>
+                            <h3 class="phone-card__model">아이폰 15 Pro</h3>
+                            <div class="phone-card__price">155만원부터</div>
+                            <ul class="phone-card__specs">
+                                <li>48MP 카메라</li>
+                                <li>3274mAh 배터리</li>
+                                <li>256GB 저장공간</li>
+                            </ul>
+                            <button class="btn btn--outline btn--sm">가격 비교</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price Alert Section -->
+        <section class="price-alert">
+            <div class="container">
+                <div class="alert-card">
+                    <h2 class="alert-card__title">가격 알림 서비스</h2>
+                    <p class="alert-card__description">원하는 휴대폰의 가격이 떨어지면 즉시 알려드립니다.</p>
+                    <form class="alert-form">
+                        <div class="form-row">
+                            <input type="email" class="form-control" placeholder="이메일 주소 입력" required>
+                            <button type="submit" class="btn btn--primary">알림 신청</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">사용자 후기</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p>"복잡한 휴대폰 구매가 이렇게 쉬워질 줄 몰랐어요. 가격 비교가 한눈에 들어와서 좋네요!"</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <strong>김민수 (28세)</strong>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p>"숨겨진 비용 없이 정확한 가격을 알 수 있어서 믿고 구매할 수 있었습니다."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <strong>이지영 (32세)</strong>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <p>"20대 맞춤 추천 기능이 정말 도움되었어요. 제 사용 패턴에 딱 맞는 폰을 찾았습니다."</p>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <strong>박준호 (26세)</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">자주 묻는 질문</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">가격 정보는 얼마나 자주 업데이트되나요?</button>
+                        <div class="faq-answer">
+                            <p>실시간으로 업데이트되며, 매시간 최신 가격 정보를 확인합니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">휴대폰 성지와 온라인 대리점 가격도 비교되나요?</button>
+                        <div class="faq-answer">
+                            <p>네, 다양한 판매 채널의 가격을 종합적으로 비교해 드립니다.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">가격 알림 서비스는 무료인가요?</button>
+                        <div class="faq-answer">
+                            <p>네, 모든 서비스는 무료로 제공됩니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3 class="footer__logo">우지(UZI)</h3>
+                    <p>스마트한 휴대폰 구매의 시작</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__section">
+                        <h4>서비스</h4>
+                        <ul>
+                            <li><a href="#comparison">가격 비교</a></li>
+                            <li><a href="#popular">인기 모델</a></li>
+                            <li><a href="#">가격 알림</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4>고객지원</h4>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#">문의하기</a></li>
+                            <li><a href="#">개인정보처리방침</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h4>소셜미디어</h4>
+                        <ul>
+                            <li><a href="#" target="_blank">인스타그램</a></li>
+                            <li><a href="#" target="_blank">페이스북</a></li>
+                            <li><a href="#" target="_blank">카카오톡</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 우지(UZI). 모든 권리 보유.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
