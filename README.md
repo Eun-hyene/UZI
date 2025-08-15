@@ -1,6 +1,6 @@
-# PhoneCom - 스마트폰 가격 비교 플랫폼
+# UZI (PhoneCom) - 스마트폰 가격 비교 플랫폼
 
-PhoneCom은 한국 시장의 스마트폰 가격을 비교하고 최적의 구매 옵션을 찾을 수 있는 웹 애플리케이션입니다.
+UZI는 한국 시장의 스마트폰 가격을 비교하고 최적의 구매 옵션을 찾을 수 있는 웹 애플리케이션입니다.
 
 ## 주요 기능
 
@@ -40,7 +40,7 @@ PhoneCom은 한국 시장의 스마트폰 가격을 비교하고 최적의 구�
 ## 프로젝트 구조
 
 ```
-PhoneCom/
+UZI/
 ├── client/          # React 프론트엔드
 │   ├── src/
 │   │   ├── components/    # 재사용 가능한 컴포넌트
@@ -88,7 +88,7 @@ npm start
 DB_HOST=localhost
 DB_USER=your_username
 DB_PASSWORD=your_password
-DB_NAME=phonecom_db
+DB_NAME=uzi_db
 JWT_SECRET=your_jwt_secret
 NAVER_CLIENT_ID=your_naver_client_id
 NAVER_CLIENT_SECRET=your_naver_client_secret
@@ -124,3 +124,4 @@ NAVER_CLIENT_SECRET=your_naver_client_secret
 ## 연락처
 
 프로젝트에 대한 문의사항이 있으시면 이슈를 통해 연락주세요.
+
